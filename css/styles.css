@@ -67,6 +67,19 @@ ul {
   color: var(--primary-text-color);
 }
 
+.features-icon-fon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 23px 0px;
+  margin-bottom: 30px;
+
+  background-color: var(--team-background-color);
+}
+
 .footer-contact-link {
   font-style: normal;
   font-size: 14px;
@@ -129,11 +142,21 @@ ul {
 }
 
 .header-contact-link {
+  display: inline-flex;
+  padding: 32px 0px 32px;
+  color: var(--secondary-text-color);
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-nav-link:hover,
@@ -228,11 +251,8 @@ ul {
   max-width: 270px;
 }
 
-.features-icon-fon {
-  background-color: #f5f4fa;
-}
-
 .features-icon {
+  align-items: center;
 }
 
 .features-title {
@@ -247,6 +267,7 @@ ul {
 .features-text {
   font-size: 14px;
   line-height: 1.71;
+
   color: var(--secondary-text-color);
 }
 
@@ -322,6 +343,14 @@ ul {
 }
 
 .client-list {
+  display: flex;
+}
+
+.client-item:not(:last-child) {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  max-width: 170px;
 }
 
 /* ----------------ПОДВАЛ----------------- */
