@@ -46,7 +46,6 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 .logo {
@@ -336,6 +335,8 @@ ul {
 }
 
 .client-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -346,11 +347,44 @@ ul {
   display: flex;
 }
 
-.client-item:not(:last-child) {
+.client-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item:not(:last-child) {
   margin-right: 30px;
-  max-width: 170px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px;
+}
+.client-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 16px 32px; */
+  fill: currentColor;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #afb1b8;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  color: var(--accent-color);
 }
 
 /* ----------------ПОДВАЛ----------------- */
