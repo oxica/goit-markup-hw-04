@@ -328,6 +328,39 @@ ul {
   color: var(--secondary-text-color);
 }
 
+.team-social-list {
+  display: flex;
+  padding: 0px 32px;
+  margin-top: 16px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #f5f4fa;
+}
+
+.team-social-link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.team-social-icon {
+  margin: 12px 0px 0px 12px;
+  fill: currentColor;
+}
+
 /* ---------------КЛИЕНТЫ---------------- */
 .client-section {
   padding-top: 94px;
@@ -388,10 +421,66 @@ ul {
 }
 
 /* ----------------ПОДВАЛ----------------- */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-background-color);
+}
+
+.footer-flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-text {
+  padding: 20px 0px 10px 0px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.footer-social-flex {
+  margin-left: 70px;
+  width: 206px;
+}
+
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #ffffff10;
+}
+
+.footer-social-link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  margin: 12px 0px 0px 12px;
+  fill: currentColor;
 }
 
 .logo-white {
@@ -451,6 +540,8 @@ ul {
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -461,6 +552,12 @@ ul {
 
 .portfolio-item {
   margin: 15px;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-border {
