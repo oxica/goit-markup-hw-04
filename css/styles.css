@@ -378,15 +378,16 @@ ul {
 
 .client-list {
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .client-item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   width: 170px;
   height: 90px;
-  justify-content: center;
-  align-items: center;
 }
 
 .client-item:not(:last-child) {
@@ -394,30 +395,29 @@ ul {
 }
 
 .client-link {
-  display: flex;
-  justify-content: center;
+  width: 170px;
+  height: 90px;
+  display: block;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  background-color: #fff;
   padding: 16px 32px;
 }
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .client-icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding: 16px 32px; */
   fill: currentColor;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: #afb1b8;
 }
 
 .client-item:hover,
 .client-item:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-.client-icon:hover,
-.client-icon:focus {
-  color: var(--accent-color);
 }
 
 /* ----------------ПОДВАЛ----------------- */
